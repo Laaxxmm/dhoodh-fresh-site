@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useTransform, useInView, AnimatePresence } from "framer-motion";
 import {
-    Curd,
+    MilkOff,
     HeartHandshake,
     Recycle,
     Users,
@@ -447,7 +447,7 @@ const SustainabilitySection = () => {
                             <p className="text-Foreground mt-2 text-[clamp(1rem,2vw,1.25rem)]">We use sustainable farming methods and minimize waste.</p>
                         </AnimatedCard>
                         <AnimatedCard>
-                            <Curd className="text-Primary w-8 h-8 mb-2" />
+                            <MilkOff className="text-Primary w-8 h-8 mb-2" />
                             <h3 className="text-Foreground font-bold text-[clamp(1.5rem,3vw,2rem)]">Ethical Treatment</h3>
                             <p className="text-Foreground mt-2 text-[clamp(1rem,2vw,1.25rem)]">We ensure the well-being of our Milks and promote humane practices.</p>
                         </AnimatedCard>
