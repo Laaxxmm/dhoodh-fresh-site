@@ -23,7 +23,7 @@ import {
     Milk,
     Timer,
     ShieldCheck,
-    Trees,
+    TreePine,
 } from "lucide-react";
 
 // ===================================================================================
@@ -254,7 +254,7 @@ const OurValuesSection = () => {
                         <p className="text-Foreground mt-2 text-[clamp(1rem,2vw,1.25rem)]">We are committed to delivering the freshest, purest milk.</p>
                     </AnimatedCard>
                     <AnimatedCard>
-                        <Trees className="text-Primary w-8 h-8 mb-2" />
+                        <TreePine className="text-Primary w-8 h-8 mb-2" />
                         <h3 className="text-Foreground font-bold text-[clamp(1.5rem,3vw,2rem)]">Sustainability</h3>
                         <p className="text-Foreground mt-2 text-[clamp(1rem,2vw,1.25rem)]">We strive to minimize our environmental impact.</p>
                     </AnimatedCard>
