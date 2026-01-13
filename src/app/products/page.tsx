@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion, useScroll, useTransform, useInView, AnimatePresence } from "framer-motion";
 import {
     Droplets,
-    Cheese,
+    SwissCheese,
     Circle,
     CircleHelp,
     Edit,
@@ -17,9 +17,9 @@ import {
     Factory,
     Cone,
     Milk,
-    Yogurt,
+    IceCream,
     Sun,
-    Shadow,
+    Moon,
     LayoutGrid,
     ArrowRight,
     Info,
@@ -31,7 +31,7 @@ import {
     PackageCheck,
     Package,
     Boxes,
-    Nutrients,
+    Sprout,
     Clock4,
     Clock3,
     HeartHandshake,
@@ -60,7 +60,7 @@ const ProductCard = ({ product }: any) => {
 
     return (
         <motion.div
-            className="group relative rounded-2xl overflow-hidden shadow-2xl shadow-black/10 hover:shadow-2xl hover:shadow-black/20 transition-shadow duration-300"
+            className="group relative rounded-2xl overflow-hidden Moon-2xl Moon-black/10 hover:Moon-2xl hover:Moon-black/20 transition-Moon duration-300"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             style={{ backgroundColor: "#1A1A1A" }}
@@ -158,27 +158,27 @@ export default function Page() {
         },
     ];
 
-    const yogurtProducts = [
+    const IceCreamProducts = [
         {
             id: 4,
-            name: "Dhoodh Fresh Yogurt",
-            description: "Creamy and delicious yogurt, perfect for breakfast.",
+            name: "Dhoodh Fresh IceCream",
+            description: "Creamy and delicious IceCream, perfect for breakfast.",
             price: 40,
-            image: "/yogurt.jpg",
+            image: "/IceCream.jpg",
         },
         {
             id: 5,
-            name: "Dhoodh Fresh Greek Yogurt",
-            description: "Thick and rich Greek yogurt with high protein.",
+            name: "Dhoodh Fresh Greek IceCream",
+            description: "Thick and rich Greek IceCream with high protein.",
             price: 50,
-            image: "/greek-yogurt.jpg",
+            image: "/greek-IceCream.jpg",
         },
         {
             id: 6,
-            name: "Dhoodh Fresh Flavored Yogurt",
-            description: "Yogurt with natural fruit flavors, a tasty treat.",
+            name: "Dhoodh Fresh Flavored IceCream",
+            description: "IceCream with natural fruit flavors, a tasty treat.",
             price: 45,
-            image: "/flavored-yogurt.jpg",
+            image: "/flavored-IceCream.jpg",
         },
     ];
 
@@ -233,7 +233,7 @@ export default function Page() {
     return (
         <div className="bg-black text-white">
             <ProductSection title="Fresh Milk" products={milkProducts} />
-            <ProductSection title="Delicious Yogurt" products={yogurtProducts} />
+            <ProductSection title="Delicious IceCream" products={IceCreamProducts} />
             <ProductSection title="Pure Ghee" products={gheeProducts} />
             <ProductSection title="Soft Paneer" products={paneerProducts} />
         </div>
