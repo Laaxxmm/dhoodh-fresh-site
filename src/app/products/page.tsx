@@ -123,7 +123,7 @@ const ProductSection = ({ title, products }: any) => {
                     initial="hidden"
                     animate={isInView ? "visible" : "hidden"}
                 >
-                    {products.map((product) => (
+                    {products.map((product: any) => (
                         <ProductCard key={product.id} product={product} />
                     ))}
                 </motion.div>
