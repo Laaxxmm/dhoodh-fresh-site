@@ -6,6 +6,8 @@ import { ImagePlus, Users, Lightbulb, Recycle, Award, User2 } from "lucide-react
 import Image from "next/image";
 import Link from "next/link";
 
+// --- COMPONENTS ---
+
 const FarmerStoryCard = ({ name, description, imageUrl }: { name: string; description: string; imageUrl: string }) => {
   const cardRef = useRef(null);
   const isInView = useInView(cardRef, { once: true });
@@ -31,7 +33,8 @@ const FarmerStoryCard = ({ name, description, imageUrl }: { name: string; descri
   );
 };
 
-const CommunityInitiativeCard = ({ title, description, icon }: { title: string; description: string; icon: React.FC }) => {
+// FIXED: Destructured 'icon' as 'Icon' (capitalized) to use it as a component
+const CommunityInitiativeCard = ({ title, description, icon: Icon }: { title: string; description: string; icon: any }) => {
   const cardRef = useRef(null);
   const isInView = useInView(cardRef, { once: true });
 
@@ -48,7 +51,8 @@ const CommunityInitiativeCard = ({ title, description, icon }: { title: string; 
       transition={{ duration: 0.5, delay: 0.3 }}
     >
       <div className="text-primary text-4xl mb-4">
-        <icon size={48} />
+        {/* Now using the capitalized 'Icon' variable */}
+        <Icon size={48} />
       </div>
       <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
       <p className="text-gray-300">{description}</p>
@@ -56,7 +60,8 @@ const CommunityInitiativeCard = ({ title, description, icon }: { title: string; 
   );
 };
 
-const StatCard = ({ title, value, icon }: { title: string; value: string; icon: React.FC }) => {
+// FIXED: Destructured 'icon' as 'Icon' and capitalized the JSX tag
+const StatCard = ({ title, value, icon: Icon }: { title: string; value: string; icon: any }) => {
   const cardRef = useRef(null);
   const isInView = useInView(cardRef, { once: true });
 
@@ -73,13 +78,16 @@ const StatCard = ({ title, value, icon }: { title: string; value: string; icon: 
       transition={{ duration: 0.5, delay: 0.4 }}
     >
       <div className="text-primary text-4xl mb-4">
-        <icon size={48} />
+        {/* Changed <icon /> to <Icon /> */}
+        <Icon size={48} />
       </div>
       <div className="text-white text-3xl font-bold">{value}</div>
       <p className="text-gray-300">{title}</p>
     </motion.div>
   );
 };
+
+// --- SECTIONS ---
 
 const AwardsSection = () => {
   const sectionRef = useRef(null);
