@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion, useScroll, useTransform, useInView, AnimatePresence } from "framer-motion";
 import {
     Droplets,
-    SwissCheese,
+    Cookie,
     Circle,
     CircleHelp,
     Edit,
