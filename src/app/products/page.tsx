@@ -31,7 +31,7 @@ import {
     PackageCheck,
     Package,
     Boxes,
-    Sprout,
+    Apple,
     Clock4,
     Clock3,
     HeartHandshake,
